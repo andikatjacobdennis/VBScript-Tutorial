@@ -26,7 +26,7 @@ You can execute any VBScript (`.vbs`) file in two ways:
     Open Command Prompt and use `cscript` for cleaner output, which is ideal for automation.
 
     ```cmd
-    cscript //nologo "01_Basics\01_My_First_Vb_Script.vbs"
+    cscript //nologo "01_Basics\01_01_My_First_Vb_Script.vbs"
     ```
 
     The `//nologo` flag suppresses the copyright banner.
@@ -36,29 +36,29 @@ You can execute any VBScript (`.vbs`) file in two ways:
 We recommend following the tutorials in this order:
 
 1. **Basics:** Understand variables, message boxes, and basic operations.
-    - `01_My_First_Vb_Script.vbs` → `02_MsgBox.vbs` → `03_Operations.vbs`
+    - `01_01_My_First_Vb_Script.vbs` → `01_02_MsgBox.vbs` → `01_03_Operations.vbs`
 
 2. **Foundations:** Learn best practices and how to structure code.
-    - `04_Line_Continuation.vbs` → `05_Option_Explicit.vbs`
+    - `01_04_Line_Continuation.vbs` → `01_05_Option_Explicit.vbs`
 
 3. **Data & Logic:** Work with arrays, conditional statements, and loops.
-    - `06_Array.vbs` → `08_Condition.vbs` → `07_Loop.vbs`
+    - `02_01_Array.vbs` → `03_01_Condition.vbs` → `03_02_Loop.vbs`
 
 4. **Modularity:** Organize your code into reusable procedures and functions.
-    - `09_Procedures.vbs` → `10_ByVal_ByRef.vbs`
+    - `04_01_Procedures.vbs` → `04_02_ByVal_ByRef.vbs`
 
 5. **Power Tools:** Use built-in functions for strings, dates, and conversions.
-    - `11_Built_in_Functions.vbs`
+    - `05_01_Built_in_Functions.vbs`
 
 6. **Interaction & IO:** Get user input and work with the file system.
-    - `13_Input.vbs` → `12_Folder_File.vbs`
+    - `06_01_Input.vbs` → `07_01_Folder_File.vbs`
 
 7. **Advanced Topics:** Integrate with Windows and handle errors gracefully.
-    - `14_Registery.vbs` → `15_Error.vbs`
+    - `08_01_Registery.vbs` → `09_01_Error.vbs`
 
 ## ⚠️ Important Notes
 
-- **Test in a Safe Environment:** Be cautious with scripts that modify files (`12_Folder_File.vbs`) or the Windows Registry (`14_Registery.vbs`). Always test them in a non-critical environment first.
+- **Test in a Safe Environment:** Be cautious with scripts that modify files (`07_01_Folder_File.vbs`) or the Windows Registry (`08_01_Registery.vbs`). Always test them in a non-critical environment first.
 - **Administrative Rights:** Some operations, especially writing to protected areas of the registry or file system, may require running the script as an Administrator.
 - **Deprecation Notice:** VBScript is a deprecated technology. While it's invaluable for maintaining legacy systems and learning core concepts, consider PowerShell or Python for new automation projects.
 
