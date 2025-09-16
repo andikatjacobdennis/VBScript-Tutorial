@@ -19,40 +19,42 @@ VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scriptin
 
 You can execute any VBScript (`.vbs`) file in two ways:
 
-1.  **Double-Click (Graphical):**
+1. **Double-Click (Graphical):**
     Simply double-click the file. It will run using `wscript.exe` and display output in message boxes.
 
-2.  **Command Line (Console):**
+2. **Command Line (Console):**
     Open Command Prompt and use `cscript` for cleaner output, which is ideal for automation.
+
     ```cmd
     cscript //nologo "01_Basics\01_My_First_Vb_Script.vbs"
     ```
+
     The `//nologo` flag suppresses the copyright banner.
 
 ## 🧭 Learning Path
 
 We recommend following the tutorials in this order:
 
-1.  **Basics:** Understand variables, message boxes, and basic operations.
-    *   `01_My_First_Vb_Script.vbs` → `02_MsgBox.vbs` → `03_Operations.vbs`
+1. **Basics:** Understand variables, message boxes, and basic operations.
+    - `01_My_First_Vb_Script.vbs` → `02_MsgBox.vbs` → `03_Operations.vbs`
 
-2.  **Foundations:** Learn best practices and how to structure code.
-    *   `04_Line_Continuation.vbs` → `05_Option_Explicit.vbs`
+2. **Foundations:** Learn best practices and how to structure code.
+    - `04_Line_Continuation.vbs` → `05_Option_Explicit.vbs`
 
-3.  **Data & Logic:** Work with arrays, conditional statements, and loops.
-    *   `06_Array.vbs` → `08_Condition.vbs` → `07_Loop.vbs`
+3. **Data & Logic:** Work with arrays, conditional statements, and loops.
+    - `06_Array.vbs` → `08_Condition.vbs` → `07_Loop.vbs`
 
-4.  **Modularity:** Organize your code into reusable procedures and functions.
-    *   `09_Procedures.vbs` → `10_ByVal_ByRef.vbs`
+4. **Modularity:** Organize your code into reusable procedures and functions.
+    - `09_Procedures.vbs` → `10_ByVal_ByRef.vbs`
 
-5.  **Power Tools:** Use built-in functions for strings, dates, and conversions.
-    *   `11_Built_in_Functions.vbs`
+5. **Power Tools:** Use built-in functions for strings, dates, and conversions.
+    - `11_Built_in_Functions.vbs`
 
-6.  **Interaction & IO:** Get user input and work with the file system.
-    *   `13_Input.vbs` → `12_Folder_File.vbs`
+6. **Interaction & IO:** Get user input and work with the file system.
+    - `13_Input.vbs` → `12_Folder_File.vbs`
 
-7.  **Advanced Topics:** Integrate with Windows and handle errors gracefully.
-    *   `14_Registery.vbs` → `15_Error.vbs`
+7. **Advanced Topics:** Integrate with Windows and handle errors gracefully.
+    - `14_Registery.vbs` → `15_Error.vbs`
 
 ## ⚠️ Important Notes
 
@@ -63,6 +65,7 @@ We recommend following the tutorials in this order:
 ## 🤝 Contributing
 
 Contributions are welcome! If you have a useful example script, an improvement to an existing tutorial, or a correction, please feel free to:
+
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature/amazing-example`).
 3. Commit your changes (`git commit -m 'Add some amazing example'`).
