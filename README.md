@@ -11,10 +11,12 @@ VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scriptin
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - A Windows operating system (Windows 7, 10, or 11)
 - Windows Script Host (WSH), which is included by default in Windows
 
 ### How to Run the Scripts
+
 You can execute any VBScript (`.vbs`) file in two ways:
 
 1.  **Double-Click (Graphical):**
