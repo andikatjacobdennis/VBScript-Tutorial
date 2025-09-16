@@ -53,9 +53,6 @@ vbs-tutorial/
 │   ├── find_and_replace.vbs
 │   └── system_info_check.vbs
 │
-├── 📂 resources/                 # Helpful references
-│   └── useful_links.md
-│
 ├── 📄 introduction.md
 ├── 📄 README.md
 └── 📄 LICENSE
