@@ -11,6 +11,7 @@
 ' - Limited login attempts
 ' - Simple user database in XML file
 ' - Session logging
+' - Cancel/exit handling
 ' =======================================
 
 ' ---------------------------------------
@@ -62,9 +63,21 @@ End Function
 Do While attemptCount < MAX_ATTEMPTS
     ' Prompt for username
     username = InputBox("Enter Username:", "Login")
+    
+    ' Check if Cancel was pressed or dialog was closed
+    If username = "" Then
+        MsgBox "Login cancelled.", vbInformation, "Login Cancelled"
+        WScript.Quit
+    End If
 
     ' Prompt for password (simple input, cannot truly mask with asterisks in VBScript InputBox)
     password = InputBox("Enter Password:", "Login")
+    
+    ' Check if Cancel was pressed or dialog was closed
+    If password = "" Then
+        MsgBox "Login cancelled.", vbInformation, "Login Cancelled"
+        WScript.Quit
+    End If
 
     ' Validate credentials
     If ValidateUser(username, password) Then
@@ -81,7 +94,9 @@ Do While attemptCount < MAX_ATTEMPTS
         Exit Do
     Else
         attemptCount = attemptCount + 1
-        MsgBox "Invalid username or password. Attempt " & attemptCount & " of " & MAX_ATTEMPTS, vbExclamation, "Login Failed"
+        If attemptCount < MAX_ATTEMPTS Then
+            MsgBox "Invalid username or password. Attempt " & attemptCount & " of " & MAX_ATTEMPTS, vbExclamation, "Login Failed"
+        End If
     End If
 Loop
 
