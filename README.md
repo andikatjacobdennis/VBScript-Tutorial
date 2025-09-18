@@ -55,7 +55,7 @@ VBScript-Tutorial/
 │
 ├── 📄 Introduction.md
 ├── 📄 README.md
-└── 📄 LICENSE
+├── 📄 LICENSE
 └── 📄 VBScript_Snippets.md
 ```
 
