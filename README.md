@@ -1,14 +1,14 @@
-# VBScript Tutorial 📜
+# VBScript Tutorial
 
 A comprehensive, well-structured collection of VBScript examples and tutorials. This repository is designed to take you from absolute beginner to proficient in Windows scripting, covering everything from basic message boxes to file system operations and registry access.
 
-## 📖 Introduction
+## Introduction
 
 VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scripting language developed by Microsoft, ideal for automating tasks in a Windows environment. While now considered legacy technology, it remains a powerful tool for system administrators and developers for task automation, logon scripts, and simple GUI applications.
 
 **New to VBScript?** Start with the **[Introduction Guide](./Introduction.md)** to learn about its applications, the Windows Script Host (WSH), and helpful tips for getting started.
 
-## 📁 Repository Structure
+## Repository Structure
 
 The tutorials are organised into logical folders with consistent numbering for easy navigation.
 
@@ -58,7 +58,7 @@ vbs-tutorial/
 └── 📄 LICENSE
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -81,7 +81,7 @@ You can execute any VBScript (`.vbs`) file in two ways:
 
    The `//nologo` flag suppresses the copyright banner.
 
-## 🧭 Learning Path
+## Learning Path
 
 We recommend following the tutorials in this order:
 
@@ -113,13 +113,13 @@ We recommend following the tutorials in this order:
 
    * `08_01_Registry.vbs` → `09_01_Error.vbs`
 
-## ⚠️ Important Notes
+## Important Notes
 
 * **Test in a Safe Environment:** Be cautious with scripts that modify files (`07_01_Folder_File.vbs`) or the Windows Registry (`08_01_Registry.vbs`). Always test them in a non-critical environment first.
 * **Administrative Rights:** Some operations, especially writing to protected areas of the registry or file system, may require running the script as an Administrator.
 * **Deprecation Notice:** VBScript is deprecated. While it's invaluable for maintaining legacy systems and learning core concepts, consider PowerShell or Python for new automation projects.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! If you have a useful example script, an improvement to an existing tutorial, or a correction, please feel free to:
 
@@ -129,11 +129,11 @@ Contributions are welcome! If you have a useful example script, an improvement t
 4. Push to the branch (`git push origin feature/amazing-example`).
 5. Open a Pull Request.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Resources
+## Resources
 
 * [Windows Script Host Documentation (Microsoft)](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c%28v=vs.84%29)
 * [VBScript Language Reference (Microsoft)](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1wf56tt%28v=vs.84%29)
