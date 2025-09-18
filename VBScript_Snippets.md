@@ -1,4 +1,6 @@
-### 1. The Absolute Basics (The "Hello World" and Structure)
+# Snippets
+
+## 1. The Absolute Basics (The "Hello World" and Structure)
 
 This is the foundation. You must be able to write this in your sleep.
 
@@ -18,11 +20,12 @@ MsgBox myMessage
 ' Output to the console (for automation)
 WScript.Echo myMessage
 ```
+
 **What to remember:** `Option Explicit`, `Dim`, `MsgBox` (for popups), `WScript.Echo` (for command line).
 
 ---
 
-### 2. User Interaction (Getting Input)
+## 2. User Interaction (Getting Input)
 
 ```vbscript
 Dim userName
@@ -35,11 +38,12 @@ Else
     MsgBox "You did not enter a name.", vbExclamation, "Notice"
 End If
 ```
+
 **What to remember:** `InputBox("Prompt", "Title")`, always check if the result is empty (`""`).
 
 ---
 
-### 3. Conditional Logic (Making Decisions)
+## 3. Conditional Logic (Making Decisions)
 
 ```vbscript
 Dim number
@@ -58,13 +62,15 @@ Else
     MsgBox "That's not a valid number!"
 End If
 ```
+
 **What to remember:** `If...Then...ElseIf...Else...End If`, `IsNumeric()` to check if input is a number.
 
 ---
 
-### 4. Loops (Doing Things Repeatedly)
+## 4. Loops (Doing Things Repeatedly)
 
-**a) For...Next Loop (When you know how many times to run)**
+a) For...Next Loop (When you know how many times to run)
+
 ```vbscript
 Dim i
 For i = 1 To 5
@@ -73,7 +79,8 @@ Next
 ' Output: 1, 2, 3, 4, 5
 ```
 
-**b) For Each...Next Loop (Go through each item in a collection)**
+b) For Each...Next Loop (Go through each item in a collection)
+
 ```vbscript
 Dim fruit, fruitList
 fruitList = Array("Apple", "Banana", "Orange") ' Create an array
@@ -84,7 +91,8 @@ Next
 ' Output: Apple, Banana, Orange
 ```
 
-**c) Do While...Loop (Run while a condition is true)**
+c) Do While...Loop (Run while a condition is true)
+
 ```vbscript
 Dim count
 count = 1
@@ -93,10 +101,12 @@ Do While count <= 3
     count = count + 1 ' INCREMENT THE COUNTER! Forgetting this is a common mistake.
 Loop
 ```
+
 **What to remember:**
-*   `For i = 1 To 5 ... Next`
-*   `For Each item In collection ... Next`
-*   `Do While condition ... Loop` (Don't forget to change the condition inside the loop!)
+
+* `For i = 1 To 5 ... Next`
+* `For Each item In collection ... Next`
+* `Do While condition ... Loop` (Don't forget to change the condition inside the loop!)
 
 ---
 
@@ -135,10 +145,12 @@ Set file = fso.OpenTextFile(filePath, 2, True) ' 2 = ForWriting, True = Create i
 file.Write newText
 file.Close
 ```
+
 **What to remember:**
-*   `Set fso = CreateObject("Scripting.FileSystemObject")`
-*   `fso.FileExists(path)`
-*   `fso.OpenTextFile(path, Mode, Create)` Modes: `1`=Read, `2`=Write, `8`=Append.
+
+* `Set fso = CreateObject("Scripting.FileSystemObject")`
+* `fso.FileExists(path)`
+* `fso.OpenTextFile(path, Mode, Create)` Modes: `1`=Read, `2`=Write, `8`=Append.
 
 ---
 
@@ -161,10 +173,12 @@ End If
 
 On Error Goto 0 ' Turn off custom error handling
 ```
+
 **What to remember:**
-*   `On Error Resume Next` (Starts error trapping)
-*   `If Err.Number <> 0 Then` (Check for an error)
-*   `Err.Clear` (Reset the error object)
+
+* `On Error Resume Next` (Starts error trapping)
+* `If Err.Number <> 0 Then` (Check for an error)
+* `Err.Clear` (Reset the error object)
 
 ---
 
@@ -182,4 +196,5 @@ wshell.Run "ping 8.8.8.8", 0, True
 ' Or just run a program
 wshell.Run "notepad.exe"
 ```
+
 **What to remember:** `Set wshell = CreateObject("WScript.Shell")` and `wshell.Run "command"`.
