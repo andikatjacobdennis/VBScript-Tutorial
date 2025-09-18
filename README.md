@@ -40,7 +40,6 @@ VBScript-Tutorial/
 ├── 📂 07_File_System_Operations/  # Interacting with Files & Folders
 ├── 📂 08_System_Integration/      # Advanced Windows Features
 ├── 📂 09_Error_Handling/          # Making Scripts Robust
-│
 ├── 📂 10_Security/                # Security Best Practices
 ├── 📂 11_Logging_Monitoring/      # Observability & Diagnostics
 ├── 📂 12_Configuration_Management/# Externalizing Settings
@@ -48,9 +47,7 @@ VBScript-Tutorial/
 ├── 📂 14_Testing_Quality/         # Ensuring Code Reliability
 ├── 📂 15_Deployment_Versioning/   # Packaging & Version Control
 ├── 📂 16_Performance_Optimization/# Optimizing Execution
-│
 ├── 📂 Examples/                   # Practical Example Scripts
-│
 ├── 📄 Introduction.md
 ├── 📄 README.md
 ├── 📄 LICENSE
