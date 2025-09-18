@@ -13,7 +13,7 @@ VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scriptin
 The tutorials are organised into logical folders with consistent numbering for easy navigation.
 
 ```text
-vbs-tutorial/
+VBScript-Tutorial/
 │
 ├── 📂 01_Basics/                 # Fundamental Concepts
 │   ├── 01_01_My_First_VBScript.vbs
@@ -48,14 +48,15 @@ vbs-tutorial/
 ├── 📂 09_Error_Handling/         # Making Scripts Robust
 │   └── 09_01_Error.vbs
 │
-├── 📂 examples/                  # Practical Example Scripts
-│   ├── simple_login_script.vbs
-│   ├── find_and_replace.vbs
-│   └── system_info_check.vbs
+├── 📂 Examples/                  # Practical Example Scripts
+│   ├── Simple_Login_Script.vbs
+│   ├── Find_And_Replace.vbs
+│   └── System_Info_Check.vbs
 │
-├── 📄 introduction.md
+├── 📄 Introduction.md
 ├── 📄 README.md
 └── 📄 LICENSE
+└── 📄 VBScript_Snippets.md
 ```
 
 ## Getting Started
