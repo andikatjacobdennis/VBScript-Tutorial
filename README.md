@@ -1,57 +1,55 @@
 # VBScript Tutorial
 
-A comprehensive, well-structured collection of VBScript examples and tutorials. This repository is designed to take you from absolute beginner to proficient in Windows scripting, covering everything from basic message boxes to file system operations and registry access.
+A comprehensive, well-structured collection of VBScript examples and tutorials.
+This repository is designed to take you from **absolute beginner** to **proficient Windows scripter**, covering everything from **basic message boxes** to **system integration, security, logging, testing, and deployment**.
 
-## Introduction
+---
 
-VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scripting language developed by Microsoft, ideal for automating tasks in a Windows environment. While now considered legacy technology, it remains a powerful tool for system administrators and developers for task automation, logon scripts, and simple GUI applications.
+## 📖 Introduction
 
-**New to VBScript?** Start with the **[Introduction Guide](./Introduction.md)** to learn about its applications, the Windows Script Host (WSH), and helpful tips for getting started.
+VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scripting language developed by Microsoft. It is ideal for **automating tasks in Windows environments**, such as:
 
-## Repository Structure
+* File and folder manipulation
+* Registry access
+* Logon/startup scripts
+* System integration via WSH, WMI, and COM
 
-The tutorials are organised into logical folders with consistent numbering for easy navigation.
+While VBScript is now considered **legacy technology**, it remains a valuable skill for:
+
+* Maintaining and modernizing legacy systems
+* Understanding Windows automation fundamentals
+* Learning structured scripting before moving to PowerShell or Python
+
+👉 **New to VBScript?** Start with the **[Introduction Guide](./Introduction.md)** to learn about its applications, the Windows Script Host (WSH), and helpful tips for getting started.
+
+---
+
+## 📁 Repository Structure
+
+The tutorials are organized into **logical modules** with consistent numbering for easy navigation. Each module addresses either **language fundamentals** or **architectural concerns**.
 
 ```text
 VBScript-Tutorial/
 │
-├── 📂 01_Basics/                 # Fundamental Concepts
-│   ├── 01_01_My_First_VBScript.vbs
-│   ├── 01_02_MsgBox.vbs
-│   ├── 01_03_Operations.vbs
-│   ├── 01_04_Line_Continuation.vbs
-│   └── 01_05_Option_Explicit.vbs
+├── 📂 01_Basics/                  # Fundamental Concepts
+├── 📂 02_Data_Structures/         # Working with Data
+├── 📂 03_Control_Flow/            # Program Logic & Loops
+├── 📂 04_Procedures/              # Functions & Subroutines
+├── 📂 05_Built_in_Functions/      # Core Language Functions
+├── 📂 06_User_Interaction/        # Getting Input from Users
+├── 📂 07_File_System_Operations/  # Interacting with Files & Folders
+├── 📂 08_System_Integration/      # Advanced Windows Features
+├── 📂 09_Error_Handling/          # Making Scripts Robust
 │
-├── 📂 02_Data_Structures/        # Working with Data
-│   └── 02_01_Array.vbs
+├── 📂 10_Security/                # Security Best Practices
+├── 📂 11_Logging_Monitoring/      # Observability & Diagnostics
+├── 📂 12_Configuration_Management/# Externalizing Settings
+├── 📂 13_InterProcess_Communication/ # Automation & Integration
+├── 📂 14_Testing_Quality/         # Ensuring Code Reliability
+├── 📂 15_Deployment_Versioning/   # Packaging & Version Control
+├── 📂 16_Performance_Optimization/# Optimizing Execution
 │
-├── 📂 03_Control_Flow/           # Program Logic & Loops
-│   ├── 03_01_Condition.vbs
-│   └── 03_02_Loop.vbs
-│
-├── 📂 04_Procedures/             # Functions & Subroutines
-│   ├── 04_01_Procedures.vbs
-│   └── 04_02_ByVal_ByRef.vbs
-│
-├── 📂 05_Built_in_Functions/     # Core Language Functions
-│   └── 05_01_Built_in_Functions.vbs
-│
-├── 📂 06_User_Interaction/       # Getting Input from Users
-│   └── 06_01_Input.vbs
-│
-├── 📂 07_File_System_Operations/ # Interacting with Files & Folders
-│   └── 07_01_Folder_File.vbs
-│
-├── 📂 08_System_Integration/     # Advanced Windows Features
-│   └── 08_01_Registry.vbs
-│
-├── 📂 09_Error_Handling/         # Making Scripts Robust
-│   └── 09_01_Error.vbs
-│
-├── 📂 Examples/                  # Practical Example Scripts
-│   ├── Simple_Login_Script.vbs
-│   ├── Find_And_Replace.vbs
-│   └── System_Info_Check.vbs
+├── 📂 Examples/                   # Practical Example Scripts
 │
 ├── 📄 Introduction.md
 ├── 📄 README.md
@@ -59,86 +57,101 @@ VBScript-Tutorial/
 └── 📄 VBScript_Snippets.md
 ```
 
-## Getting Started
+---
+
+## 🧭 Module Overview
+
+| Module                            | Purpose                                                                                                                     |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **01–09 Core Language**           | Syntax, data structures, flow, procedures, built-in functions, user input, file system, system integration, error handling. |
+| **10 Security**                   | Safe input handling, least-privilege scripting, secure file & registry access.                                              |
+| **11 Logging & Monitoring**       | Script observability: log files, event viewer integration, troubleshooting.                                                 |
+| **12 Configuration Management**   | Externalizing settings: INI files, environment variables, registry keys.                                                    |
+| **13 Interprocess Communication** | WMI, COM automation, remote scripting, integration with other processes.                                                    |
+| **14 Testing & Quality**          | Unit testing, static analysis, coding guidelines, best practices.                                                           |
+| **15 Deployment & Versioning**    | Script version headers, distribution strategies, CI/CD integration.                                                         |
+| **16 Performance Optimization**   | Profiling, efficient loops, caching, minimizing system calls.                                                               |
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-* A Windows operating system (Windows 7, 10, or 11)
-* Windows Script Host (WSH), which is included by default in Windows
+* Windows operating system (7, 10, or 11)
+* Windows Script Host (WSH), included by default
 
-### How to Run the Scripts
+### Running Scripts
 
-You can execute any VBScript (`.vbs`) file in two ways:
+You can run any `.vbs` file in two ways:
 
 1. **Double-Click (Graphical):**
-   Double-click the file. It will run using `wscript.exe` and display output in message boxes.
+   Runs with `wscript.exe` and shows message boxes.
 
 2. **Command Line (Console):**
-   Open Command Prompt and use `cscript` for cleaner output, which is ideal for automation.
+   Recommended for automation:
 
    ```cmd
    cscript //nologo "01_Basics\01_01_My_First_VBScript.vbs"
    ```
 
-   The `//nologo` flag suppresses the copyright banner.
+   The `//nologo` flag hides the copyright banner.
 
-## Learning Path
+---
 
-We recommend following the tutorials in this order:
+## 🛤️ Learning Path
 
-1. **Basics:** Understand variables, message boxes, and basic operations.
+Follow this order for a smooth progression:
 
-   * `01_01_My_First_VBScript.vbs` → `01_02_MsgBox.vbs` → `01_03_Operations.vbs`
+1. **Basics → Data Structures → Control Flow**
+2. **Procedures → Built-in Functions → User Interaction**
+3. **File System → System Integration → Error Handling**
+4. **Security → Logging → Configuration Management**
+5. **Interprocess Communication → Testing & Quality**
+6. **Deployment & Versioning → Performance Optimization**
 
-2. **Foundations:** Learn best practices and how to structure code.
+This path mirrors how an architect designs software: start with fundamentals, then add cross-cutting concerns like **security, logging, configuration, testing, deployment, and performance**.
 
-   * `01_04_Line_Continuation.vbs` → `01_05_Option_Explicit.vbs`
+---
 
-3. **Data & Logic:** Work with arrays, conditional statements, and loops.
+## ⚠️ Important Notes
 
-   * `02_01_Array.vbs` → `03_01_Condition.vbs` → `03_02_Loop.vbs`
+* **Test Safely:** Always test scripts that modify files or the registry in a non-production environment first.
+* **Administrative Rights:** Certain scripts (e.g., registry edits) require Administrator privileges.
+* **Deprecation Notice:** VBScript is deprecated. For modern automation, prefer **PowerShell or Python**—but understanding VBScript is invaluable for maintaining legacy systems.
 
-4. **Modularity:** Organise your code into reusable procedures and functions.
+---
 
-   * `04_01_Procedures.vbs` → `04_02_ByVal_ByRef.vbs`
+## 🤝 Contributing
 
-5. **Power Tools:** Use built-in functions for strings, dates, and conversions.
+We welcome contributions! You can add:
 
-   * `05_01_Built_in_Functions.vbs`
+* New example scripts
+* Improvements to tutorials
+* Fixes or best practices
 
-6. **Interaction & IO:** Get user input and work with the file system.
+### Workflow
 
-   * `06_01_Input.vbs` → `07_01_Folder_File.vbs`
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature/amazing-example`)
+3. Commit changes (`git commit -m "Add amazing example"`)
+4. Push to your branch (`git push origin feature/amazing-example`)
+5. Open a Pull Request
 
-7. **Advanced Topics:** Integrate with Windows and handle errors gracefully.
+---
 
-   * `08_01_Registry.vbs` → `09_01_Error.vbs`
-
-## Important Notes
-
-* **Test in a Safe Environment:** Be cautious with scripts that modify files (`07_01_Folder_File.vbs`) or the Windows Registry (`08_01_Registry.vbs`). Always test them in a non-critical environment first.
-* **Administrative Rights:** Some operations, especially writing to protected areas of the registry or file system, may require running the script as an Administrator.
-* **Deprecation Notice:** VBScript is deprecated. While it's invaluable for maintaining legacy systems and learning core concepts, consider PowerShell or Python for new automation projects.
-
-## Contributing
-
-Contributions are welcome! If you have a useful example script, an improvement to an existing tutorial, or a correction, please feel free to:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/amazing-example`).
-3. Commit your changes (`git commit -m 'Add some amazing example'`).
-4. Push to the branch (`git push origin feature/amazing-example`).
-5. Open a Pull Request.
-
-## License
+## 📜 License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-## Resources
+---
+
+## 🔗 Resources
 
 * [Windows Script Host Documentation (Microsoft)](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c%28v=vs.84%29)
 * [VBScript Language Reference (Microsoft)](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1wf56tt%28v=vs.84%29)
 
 ---
 
-**Happy Scripting!** If you find this tutorial helpful, please give it a ⭐!
+**Happy Scripting!** 🎉
+If you find this tutorial helpful, please give it a ⭐
