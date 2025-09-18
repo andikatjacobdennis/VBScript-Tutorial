@@ -1,4 +1,4 @@
-# Snippets
+# VBScript Snippets
 
 ## 1. The Absolute Basics (The "Hello World" and Structure)
 
