@@ -5,7 +5,7 @@ This repository is designed to take you from **absolute beginner** to **proficie
 
 ---
 
-## 📖 Introduction
+## Introduction
 
 VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scripting language developed by Microsoft. It is ideal for **automating tasks in Windows environments**, such as:
 
@@ -20,11 +20,11 @@ While VBScript is now considered **legacy technology**, it remains a valuable sk
 * Understanding Windows automation fundamentals
 * Learning structured scripting before moving to PowerShell or Python
 
-👉 **New to VBScript?** Start with the **[Introduction Guide](./Introduction.md)** to learn about its applications, the Windows Script Host (WSH), and helpful tips for getting started.
+**New to VBScript?** Start with the **[Introduction Guide](./Introduction.md)** to learn about its applications, the Windows Script Host (WSH), and helpful tips for getting started.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 The tutorials are organized into **logical modules** with consistent numbering for easy navigation. Each module addresses either **language fundamentals** or **architectural concerns**.
 
@@ -56,7 +56,7 @@ VBScript-Tutorial/
 
 ---
 
-## 🧭 Module Overview
+## Module Overview
 
 | Module                            | Purpose                                                                                                                     |
 | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -71,7 +71,7 @@ VBScript-Tutorial/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -96,7 +96,7 @@ You can run any `.vbs` file in two ways:
 
 ---
 
-## 🛤️ Learning Path
+## Learning Path
 
 Follow this order for a smooth progression:
 
@@ -111,7 +111,7 @@ This path mirrors how an architect designs software: start with fundamentals, th
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 * **Test Safely:** Always test scripts that modify files or the registry in a non-production environment first.
 * **Administrative Rights:** Certain scripts (e.g., registry edits) require Administrator privileges.
@@ -119,7 +119,7 @@ This path mirrors how an architect designs software: start with fundamentals, th
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! You can add:
 
@@ -137,18 +137,18 @@ We welcome contributions! You can add:
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🔗 Resources
+## Resources
 
 * [Windows Script Host Documentation (Microsoft)](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1et7k7c%28v=vs.84%29)
 * [VBScript Language Reference (Microsoft)](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/d1wf56tt%28v=vs.84%29)
 
 ---
 
-**Happy Scripting!** 🎉
+**Happy Scripting!**
 If you find this tutorial helpful, please give it a ⭐
