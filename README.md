@@ -6,7 +6,7 @@ A comprehensive, well-structured collection of VBScript examples and tutorials. 
 
 VBScript (Visual Basic Scripting Edition) is a lightweight, interpreted scripting language developed by Microsoft, ideal for automating tasks in a Windows environment. While now considered legacy technology, it remains a powerful tool for system administrators and developers for task automation, logon scripts, and simple GUI applications.
 
-**New to VBScript?** Start with the **[Introduction Guide](./introduction.md)** to learn about its applications, the Windows Script Host (WSH), and helpful tips for getting started.
+**New to VBScript?** Start with the **[Introduction Guide](./Introduction.md)** to learn about its applications, the Windows Script Host (WSH), and helpful tips for getting started.
 
 ## 📁 Repository Structure
 
